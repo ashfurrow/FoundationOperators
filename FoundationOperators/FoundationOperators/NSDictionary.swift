@@ -18,6 +18,7 @@ import Foundation
     dictionary = dictionary + tuple
 }
 
+operator infix ++ {}
 @infix func ++ (left: NSDictionary, right: NSDictionary) -> NSDictionary {
     var resultDictionary = NSMutableDictionary(dictionary: left)
     resultDictionary.addEntriesFromDictionary(right)
@@ -25,7 +26,6 @@ import Foundation
 }
 
 operator infix ++= {}
-
 @infix func ++= (inout left: NSDictionary, right: NSDictionary) {
     left = left ++ right
 }

@@ -9,50 +9,66 @@
 import Foundation
 
 @infix func +(lhs: NSDateComponents, rhs: NSDateComponents) -> NSDateComponents! {
+
+    func zeroIfNSUndefinedDateComponent(component: Int) -> Int {
+        if (component == NSUndefinedDateComponent) {
+            return 0
+        }
+        return component
+    }
+
     if (lhs.timeZone != rhs.timeZone) {
         return nil;
     }
 
     let component = NSDateComponents()
     component.setWeek(lhs.week() + rhs.week())
-    component.era = lhs.era + rhs.era
-    component.year = lhs.year + rhs.year
-    component.month = lhs.month + rhs.month
-    component.day = lhs.day + rhs.day
-    component.hour = lhs.hour + rhs.hour
-    component.minute = lhs.minute + rhs.minute
-    component.second = lhs.second + rhs.second
-    component.weekday = lhs.weekday + rhs.weekday
-    component.weekdayOrdinal = lhs.weekdayOrdinal + rhs.weekdayOrdinal
-    component.quarter = lhs.quarter + rhs.quarter
-    component.weekOfMonth = lhs.weekOfMonth + rhs.weekOfMonth
-    component.weekOfYear = lhs.weekOfYear + rhs.weekOfYear
-    component.yearForWeekOfYear = lhs.yearForWeekOfYear + rhs.yearForWeekOfYear
+    component.era = zeroIfNSUndefinedDateComponent(lhs.era) + zeroIfNSUndefinedDateComponent(rhs.era)
+    component.year = zeroIfNSUndefinedDateComponent(lhs.year) + zeroIfNSUndefinedDateComponent(rhs.year)
+    component.month = zeroIfNSUndefinedDateComponent(lhs.month) + zeroIfNSUndefinedDateComponent(rhs.month)
+    component.day = zeroIfNSUndefinedDateComponent(lhs.day) + zeroIfNSUndefinedDateComponent(rhs.day)
+    component.hour = zeroIfNSUndefinedDateComponent(lhs.hour) + zeroIfNSUndefinedDateComponent(rhs.hour)
+    component.minute = zeroIfNSUndefinedDateComponent(lhs.minute) + zeroIfNSUndefinedDateComponent(rhs.minute)
+    component.second = zeroIfNSUndefinedDateComponent(lhs.second) + zeroIfNSUndefinedDateComponent(rhs.second)
+    component.weekday = zeroIfNSUndefinedDateComponent(lhs.weekday) + zeroIfNSUndefinedDateComponent(rhs.weekday)
+    component.weekdayOrdinal = zeroIfNSUndefinedDateComponent(lhs.weekdayOrdinal) + zeroIfNSUndefinedDateComponent(rhs.weekdayOrdinal)
+    component.quarter = zeroIfNSUndefinedDateComponent(lhs.quarter) + zeroIfNSUndefinedDateComponent(rhs.quarter)
+    component.weekOfMonth = zeroIfNSUndefinedDateComponent(lhs.weekOfMonth) + zeroIfNSUndefinedDateComponent(rhs.weekOfMonth)
+    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) + zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
+    component.yearForWeekOfYear = zeroIfNSUndefinedDateComponent(lhs.yearForWeekOfYear) + zeroIfNSUndefinedDateComponent(rhs.yearForWeekOfYear)
     component.timeZone = lhs.timeZone
 
     return component
 }
 
 @infix func -(lhs: NSDateComponents, rhs: NSDateComponents) -> NSDateComponents! {
+
+    func zeroIfNSUndefinedDateComponent(component: Int) -> Int {
+        if (component == NSUndefinedDateComponent) {
+            return 0
+        }
+        return component
+    }
+
     if (lhs.timeZone != rhs.timeZone) {
         return nil;
     }
 
     let component = NSDateComponents()
     component.setWeek(lhs.week() - rhs.week())
-    component.era = lhs.era - rhs.era
-    component.year = lhs.year - rhs.year
-    component.month = lhs.month - rhs.month
-    component.day = lhs.day - rhs.day
-    component.hour = lhs.hour - rhs.hour
-    component.minute = lhs.minute - rhs.minute
-    component.second = lhs.second - rhs.second
-    component.weekday = lhs.weekday - rhs.weekday
-    component.weekdayOrdinal = lhs.weekdayOrdinal - rhs.weekdayOrdinal
-    component.quarter = lhs.quarter - rhs.quarter
-    component.weekOfMonth = lhs.weekOfMonth - rhs.weekOfMonth
-    component.weekOfYear = lhs.weekOfYear - rhs.weekOfYear
-    component.yearForWeekOfYear = lhs.yearForWeekOfYear - rhs.yearForWeekOfYear
+    component.era = zeroIfNSUndefinedDateComponent(lhs.era) - zeroIfNSUndefinedDateComponent(rhs.era)
+    component.year = zeroIfNSUndefinedDateComponent(lhs.year) - zeroIfNSUndefinedDateComponent(rhs.year)
+    component.month = zeroIfNSUndefinedDateComponent(lhs.month) - zeroIfNSUndefinedDateComponent(rhs.month)
+    component.day = zeroIfNSUndefinedDateComponent(lhs.day) - zeroIfNSUndefinedDateComponent(rhs.day)
+    component.hour = zeroIfNSUndefinedDateComponent(lhs.hour) - zeroIfNSUndefinedDateComponent(rhs.hour)
+    component.minute = zeroIfNSUndefinedDateComponent(lhs.minute) - zeroIfNSUndefinedDateComponent(rhs.minute)
+    component.second = zeroIfNSUndefinedDateComponent(lhs.second) - zeroIfNSUndefinedDateComponent(rhs.second)
+    component.weekday = zeroIfNSUndefinedDateComponent(lhs.weekday) - zeroIfNSUndefinedDateComponent(rhs.weekday)
+    component.weekdayOrdinal = zeroIfNSUndefinedDateComponent(lhs.weekdayOrdinal) - zeroIfNSUndefinedDateComponent(rhs.weekdayOrdinal)
+    component.quarter = zeroIfNSUndefinedDateComponent(lhs.quarter) - zeroIfNSUndefinedDateComponent(rhs.quarter)
+    component.weekOfMonth = zeroIfNSUndefinedDateComponent(lhs.weekOfMonth) - zeroIfNSUndefinedDateComponent(rhs.weekOfMonth)
+    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) - zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
+    component.yearForWeekOfYear = zeroIfNSUndefinedDateComponent(lhs.yearForWeekOfYear) - zeroIfNSUndefinedDateComponent(rhs.yearForWeekOfYear)
     component.timeZone = lhs.timeZone
 
     return component
