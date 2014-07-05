@@ -19,7 +19,7 @@ import Foundation
 @infix func - (array: NSArray, object: NSObject) -> NSArray {
     let mutableArray = NSMutableArray(array: array)
     mutableArray.removeObject(object)
-    return mutableArray
+    return NSArray(array: mutableArray)
 }
 
 @assignment func -= (inout array: NSArray, object: NSObject) {
@@ -46,7 +46,7 @@ operator infix -- {}
     for element:AnyObject in right {
         resultArray.removeObject(element)
     }
-    return resultArray
+    return NSArray(array: resultArray)
 }
 
 operator infix --= {}
