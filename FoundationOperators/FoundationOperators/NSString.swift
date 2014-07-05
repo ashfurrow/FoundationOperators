@@ -16,7 +16,7 @@ import Foundation
     left = left + right
 }
 
-@infix func * (string: NSString, times: UInt32) -> NSString {
+@infix func * (string: NSString, times: UInt) -> NSString {
     var returnString: NSMutableString = ""
     for i in 0..times {
         returnString.appendString(string)
@@ -24,7 +24,7 @@ import Foundation
     return returnString
 }
 
-@assignment func *= (inout string: NSString, times: UInt32) {
+@assignment func *= (inout string: NSString, times: UInt) {
     string = string * times
 }
 
