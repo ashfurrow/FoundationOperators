@@ -33,9 +33,17 @@ operator infix ++ {}
     return left.setByAddingObjectsFromSet(right)
 }
 
+@infix func ++ (left: NSSet, right: NSArray) -> NSSet {
+    return left.setByAddingObjectsFromArray(right)
+}
+
 operator infix ++= {}
 
 @assignment func ++= (inout left: NSSet, right: NSSet) {
+    left = left ++ right
+}
+
+@assignment func ++= (inout left: NSSet, right: NSArray) {
     left = left ++ right
 }
 
@@ -43,14 +51,22 @@ operator infix -- {}
 
 @infix func -- (left: NSSet, right: NSSet) -> NSSet {
     var resultSet = NSMutableSet(set: left)
-    for element:AnyObject in right {
-        resultSet.removeObject(element)
-    }
-    return resultSet
+    resultSet.minusSet(right)
+    return NSSet(set: resultSet)
+}
+
+@infix func -- (left: NSSet, right: NSArray) -> NSSet {
+    var resultSet = NSMutableSet(set: left)
+    resultSet.minusSet(NSSet(array: right))
+    return NSSet(set: resultSet)
 }
 
 operator infix --= {}
 
 @assignment func --= (inout left: NSSet, right: NSSet) {
+    left = left -- right
+}
+
+@assignment func --= (inout left: NSSet, right: NSArray) {
     left = left -- right
 }
