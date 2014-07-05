@@ -7,3 +7,35 @@
 //
 
 import Foundation
+
+@infix func + (left: NSString, right: NSString) -> NSString {
+    return left.stringByAppendingString(right)
+}
+
+@assignment func += (inout left: NSString, right: NSString) {
+    left = left + right
+}
+
+@infix func * (string: NSString, times: UInt32) -> NSString {
+    var returnString: NSMutableString = ""
+    for i in 0..times {
+        returnString.appendString(string)
+    }
+    return returnString
+}
+
+@assignment func *= (inout string: NSString, times: UInt32) {
+    string = string * times
+}
+
+@infix func - (left: NSString, right: NSString) -> NSString {
+    return left.stringByReplacingOccurrencesOfString(right, withString: "")
+}
+
+@assignment func -= (inout left: NSString, right: NSString) {
+    left = left - right
+}
+
+@infix func / (left: NSString, right: NSString) -> NSArray {
+    return left.componentsSeparatedByString(right)
+}
