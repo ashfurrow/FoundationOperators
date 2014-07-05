@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  NSNumber.swift
 //  FoundationOperators
 //
 //  Created by Witek Przeciechowski on 05/07/2014.
