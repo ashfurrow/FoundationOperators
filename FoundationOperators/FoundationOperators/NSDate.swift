@@ -38,9 +38,9 @@ import Foundation
 }
 
 @infix func -(lhs: NSDate, rhs:NSDateComponents) -> NSDate! {
-    return lhs + rhs
+    let negativeComponent = NSDateComponents() - rhs
+    return lhs + negativeComponent
 }
 
 extension NSDate: Comparable {
 }
-
