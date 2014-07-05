@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+@infix func + (left: NSNumber, right: NSNumber) -> NSNumber {
+    return left.doubleValue + right.doubleValue
+}
+
+@infix func - (left: NSNumber, right: NSNumber) -> NSNumber {
+    return left.doubleValue - right.doubleValue
+}
+
+@infix func * (left: NSNumber, right: NSNumber) -> NSNumber {
+    return left.doubleValue * right.doubleValue
+}
+
+@infix func / (left: NSNumber, right: NSNumber) -> NSNumber {
+    return left.doubleValue / right.doubleValue
+}

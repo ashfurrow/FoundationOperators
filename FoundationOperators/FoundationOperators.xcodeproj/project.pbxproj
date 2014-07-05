@@ -14,6 +14,7 @@
 		5B2EDE691968297C00A0C054 /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE681968297C00A0C054 /* NSString.swift */; };
 		5B2EDE6B1968299C00A0C054 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6A1968299C00A0C054 /* NSDate.swift */; };
 		5B2EDE6D196829A800A0C054 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6C196829A800A0C054 /* NSNumber.swift */; };
+		5B2EDE7019682E0200A0C054 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6F19682E0200A0C054 /* NSArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		5B2EDE681968297C00A0C054 /* NSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSString.swift; sourceTree = "<group>"; };
 		5B2EDE6A1968299C00A0C054 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		5B2EDE6C196829A800A0C054 /* NSNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
+		5B2EDE6F19682E0200A0C054 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				5B2EDE681968297C00A0C054 /* NSString.swift */,
 				5B2EDE6A1968299C00A0C054 /* NSDate.swift */,
 				5B2EDE6C196829A800A0C054 /* NSNumber.swift */,
+				5B2EDE6F19682E0200A0C054 /* NSArray.swift */,
 				5B2EDE1619681EC700A0C054 /* Supporting Files */,
 			);
 			path = FoundationOperators;
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2EDE7019682E0200A0C054 /* NSArray.swift in Sources */,
 				5B2EDE3019681F1500A0C054 /* File.swift in Sources */,
 				5B2EDE6B1968299C00A0C054 /* NSDate.swift in Sources */,
 				5B2EDE691968297C00A0C054 /* NSString.swift in Sources */,
