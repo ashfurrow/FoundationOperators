@@ -7,3 +7,50 @@
 //
 
 import Foundation
+
+@infix func + (inout array: NSArray, object: NSObject) -> NSArray {
+    return array.arrayByAddingObject(object)
+}
+
+@assignment func += (inout array: NSArray, object: NSObject) {
+    array = array + object
+}
+
+@infix func - (array: NSArray, object: NSObject) -> NSArray {
+    let mutableArray = NSMutableArray(array: array)
+    mutableArray.removeObject(object)
+    return mutableArray
+}
+
+@assignment func -= (inout array: NSArray, object: NSObject) {
+    array = array - object
+}
+
+
+operator infix ++ {}
+
+@infix func ++ (left: NSArray, right: NSArray) -> NSArray {
+    return left.arrayByAddingObjectsFromArray(right)
+}
+
+operator infix ++= {}
+
+@assignment func ++= (inout left: NSArray, right: NSArray) {
+    left = left ++ right
+}
+
+operator infix -- {}
+
+@infix func -- (left: NSArray, right: NSArray) -> NSArray {
+    var resultArray = NSMutableArray(array: left)
+    for element:AnyObject in right {
+        resultArray.removeObject(element)
+    }
+    return resultArray
+}
+
+operator infix --= {}
+
+@assignment func --= (inout left: NSArray, right: NSArray) {
+    left = left -- right
+}
