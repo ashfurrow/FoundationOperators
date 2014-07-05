@@ -24,10 +24,23 @@ import Foundation
     return lhs.compare(rhs) == NSComparisonResult.OrderedAscending
 }
 
-@infix func <(lhs: NSDate, rhs: NSDate) -> Bool{
+@infix func <(lhs: NSDate, rhs: NSDate) -> Bool {
     return !(lhs < rhs)
 }
 
-extension NSDate: Comparable {
-
+@infix func -(lhs: NSDate, rhs:NSDate) -> NSTimeInterval {
+    return lhs.timeIntervalSinceDate(rhs)
 }
+
+@infix func +(lhs: NSDate, rhs:NSDateComponents) -> NSDate! {
+    let calendar = NSCalendar.currentCalendar()
+    return calendar.dateByAddingComponents(rhs, toDate: lhs, options: NSCalendarOptions())
+}
+
+@infix func -(lhs: NSDate, rhs:NSDateComponents) -> NSDate! {
+    return lhs + rhs
+}
+
+extension NSDate: Comparable {
+}
+

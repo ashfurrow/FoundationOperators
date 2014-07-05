@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4049A94B196864200050C617 /* Int+DateComponentsConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A94A196864200050C617 /* Int+DateComponentsConvertible.swift */; };
 		5B2EDE1919681EC700A0C054 /* FoundationOperators.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2EDE1819681EC700A0C054 /* FoundationOperators.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B2EDE1F19681EC700A0C054 /* FoundationOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2EDE1319681EC700A0C054 /* FoundationOperators.framework */; };
 		5B2EDE2619681EC700A0C054 /* FoundationOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE2519681EC700A0C054 /* FoundationOperatorsTests.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4049A94A196864200050C617 /* Int+DateComponentsConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+DateComponentsConvertible.swift"; sourceTree = "<group>"; };
 		5B2EDE1319681EC700A0C054 /* FoundationOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2EDE1719681EC700A0C054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B2EDE1819681EC700A0C054 /* FoundationOperators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationOperators.h; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				5B2EDE2F19681F1500A0C054 /* File.swift */,
 				5B2EDE681968297C00A0C054 /* NSString.swift */,
 				5B2EDE6A1968299C00A0C054 /* NSDate.swift */,
+				4049A94A196864200050C617 /* Int+DateComponentsConvertible.swift */,
 				5B2EDE6C196829A800A0C054 /* NSNumber.swift */,
 				5B2EDE6F19682E0200A0C054 /* NSArray.swift */,
 				5B2EDE1619681EC700A0C054 /* Supporting Files */,
@@ -235,6 +238,7 @@
 				5B2EDE3019681F1500A0C054 /* File.swift in Sources */,
 				F28FD37B196858AB005FA1A2 /* NSDictionary.swift in Sources */,
 				5B2EDE6B1968299C00A0C054 /* NSDate.swift in Sources */,
+				4049A94B196864200050C617 /* Int+DateComponentsConvertible.swift in Sources */,
 				5B2EDE691968297C00A0C054 /* NSString.swift in Sources */,
 				5B2EDE6D196829A800A0C054 /* NSNumber.swift in Sources */,
 				F28FD37919683E4D005FA1A2 /* NSSet.swift in Sources */,
