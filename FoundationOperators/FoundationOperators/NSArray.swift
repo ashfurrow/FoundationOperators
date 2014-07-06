@@ -8,8 +8,8 @@
 
 import Foundation
 
-@infix func + (inout array: NSArray, object: NSObject) -> NSArray {
-    return array.arrayByAddingObject(object)
+@infix func + (lhs: NSArray, rhs: NSObject) -> NSArray {
+    return lhs.arrayByAddingObject(rhs)
 }
 
 @assignment func += (inout array: NSArray, object: NSObject) {
@@ -28,7 +28,6 @@ import Foundation
 
 
 operator infix ++ {}
-
 @infix func ++ (left: NSArray, right: NSArray) -> NSArray {
     return left.arrayByAddingObjectsFromArray(right)
 }
