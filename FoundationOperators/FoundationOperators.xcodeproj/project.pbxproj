@@ -10,8 +10,6 @@
 		4049A94B196864200050C617 /* Int+DateComponentsConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A94A196864200050C617 /* Int+DateComponentsConvertible.swift */; };
 		4049A94D19686DF70050C617 /* NSDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A94C19686DF70050C617 /* NSDateComponents.swift */; };
 		5B2EDE1919681EC700A0C054 /* FoundationOperators.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2EDE1819681EC700A0C054 /* FoundationOperators.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B2EDE1F19681EC700A0C054 /* FoundationOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2EDE1319681EC700A0C054 /* FoundationOperators.framework */; };
-		5B2EDE2619681EC700A0C054 /* FoundationOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE2519681EC700A0C054 /* FoundationOperatorsTests.swift */; };
 		5B2EDE691968297C00A0C054 /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE681968297C00A0C054 /* NSString.swift */; };
 		5B2EDE6B1968299C00A0C054 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6A1968299C00A0C054 /* NSDate.swift */; };
 		5B2EDE6D196829A800A0C054 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6C196829A800A0C054 /* NSNumber.swift */; };
@@ -20,25 +18,12 @@
 		F28FD37B196858AB005FA1A2 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37A196858AB005FA1A2 /* NSDictionary.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5B2EDE2019681EC700A0C054 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B2EDE0A19681EC700A0C054 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B2EDE1219681EC700A0C054;
-			remoteInfo = FoundationOperators;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		4049A94A196864200050C617 /* Int+DateComponentsConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+DateComponentsConvertible.swift"; sourceTree = "<group>"; };
 		4049A94C19686DF70050C617 /* NSDateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateComponents.swift; sourceTree = "<group>"; };
 		5B2EDE1319681EC700A0C054 /* FoundationOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2EDE1719681EC700A0C054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B2EDE1819681EC700A0C054 /* FoundationOperators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationOperators.h; sourceTree = "<group>"; };
-		5B2EDE1E19681EC700A0C054 /* FoundationOperatorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationOperatorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B2EDE2419681EC700A0C054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B2EDE2519681EC700A0C054 /* FoundationOperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationOperatorsTests.swift; sourceTree = "<group>"; };
 		5B2EDE681968297C00A0C054 /* NSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSString.swift; sourceTree = "<group>"; };
 		5B2EDE6A1968299C00A0C054 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		5B2EDE6C196829A800A0C054 /* NSNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
@@ -55,14 +40,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B2EDE1B19681EC700A0C054 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B2EDE1F19681EC700A0C054 /* FoundationOperators.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				5B2EDE1519681EC700A0C054 /* FoundationOperators */,
-				5B2EDE2219681EC700A0C054 /* FoundationOperatorsTests */,
 				5B2EDE1419681EC700A0C054 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				5B2EDE1319681EC700A0C054 /* FoundationOperators.framework */,
-				5B2EDE1E19681EC700A0C054 /* FoundationOperatorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +69,9 @@
 				4049A94A196864200050C617 /* Int+DateComponentsConvertible.swift */,
 				5B2EDE6C196829A800A0C054 /* NSNumber.swift */,
 				5B2EDE6F19682E0200A0C054 /* NSArray.swift */,
-				5B2EDE1619681EC700A0C054 /* Supporting Files */,
 				F28FD37819683E4D005FA1A2 /* NSSet.swift */,
 				F28FD37A196858AB005FA1A2 /* NSDictionary.swift */,
+				5B2EDE1619681EC700A0C054 /* Supporting Files */,
 			);
 			path = FoundationOperators;
 			sourceTree = "<group>";
@@ -105,23 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				5B2EDE1719681EC700A0C054 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5B2EDE2219681EC700A0C054 /* FoundationOperatorsTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B2EDE2519681EC700A0C054 /* FoundationOperatorsTests.swift */,
-				5B2EDE2319681EC700A0C054 /* Supporting Files */,
-			);
-			path = FoundationOperatorsTests;
-			sourceTree = "<group>";
-		};
-		5B2EDE2319681EC700A0C054 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B2EDE2419681EC700A0C054 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,24 +116,6 @@
 			productReference = 5B2EDE1319681EC700A0C054 /* FoundationOperators.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B2EDE1D19681EC700A0C054 /* FoundationOperatorsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B2EDE2C19681EC700A0C054 /* Build configuration list for PBXNativeTarget "FoundationOperatorsTests" */;
-			buildPhases = (
-				5B2EDE1A19681EC700A0C054 /* Sources */,
-				5B2EDE1B19681EC700A0C054 /* Frameworks */,
-				5B2EDE1C19681EC700A0C054 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B2EDE2119681EC700A0C054 /* PBXTargetDependency */,
-			);
-			name = FoundationOperatorsTests;
-			productName = FoundationOperatorsTests;
-			productReference = 5B2EDE1E19681EC700A0C054 /* FoundationOperatorsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,10 +127,6 @@
 				TargetAttributes = {
 					5B2EDE1219681EC700A0C054 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					5B2EDE1D19681EC700A0C054 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 5B2EDE1219681EC700A0C054;
 					};
 				};
 			};
@@ -207,20 +143,12 @@
 			projectRoot = "";
 			targets = (
 				5B2EDE1219681EC700A0C054 /* FoundationOperators */,
-				5B2EDE1D19681EC700A0C054 /* FoundationOperatorsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5B2EDE1119681EC700A0C054 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B2EDE1C19681EC700A0C054 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B2EDE1A19681EC700A0C054 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B2EDE2619681EC700A0C054 /* FoundationOperatorsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5B2EDE2119681EC700A0C054 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B2EDE1219681EC700A0C054 /* FoundationOperators */;
-			targetProxy = 5B2EDE2019681EC700A0C054 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5B2EDE2719681EC700A0C054 /* Debug */ = {
@@ -382,38 +294,6 @@
 			};
 			name = Release;
 		};
-		5B2EDE2D19681EC700A0C054 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FoundationOperatorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5B2EDE2E19681EC700A0C054 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FoundationOperatorsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,15 +311,6 @@
 			buildConfigurations = (
 				5B2EDE2A19681EC700A0C054 /* Debug */,
 				5B2EDE2B19681EC700A0C054 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B2EDE2C19681EC700A0C054 /* Build configuration list for PBXNativeTarget "FoundationOperatorsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B2EDE2D19681EC700A0C054 /* Debug */,
-				5B2EDE2E19681EC700A0C054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
