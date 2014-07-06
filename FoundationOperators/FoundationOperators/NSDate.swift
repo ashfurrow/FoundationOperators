@@ -9,7 +9,7 @@
 import Foundation
 
 @infix func ==(lhs: NSDate, rhs: NSDate) -> Bool {
-    return lhs == rhs
+    return lhs.isEqualToDate(rhs)
 }
 
 @infix func <=(lhs: NSDate, rhs: NSDate) -> Bool {
@@ -21,11 +21,11 @@ import Foundation
 }
 
 @infix func >(lhs: NSDate, rhs: NSDate) -> Bool {
-    return lhs.compare(rhs) == NSComparisonResult.OrderedAscending
+    return lhs.compare(rhs) == NSComparisonResult.OrderedDescending
 }
 
 @infix func <(lhs: NSDate, rhs: NSDate) -> Bool {
-    return !(lhs < rhs)
+    return !(lhs > rhs)
 }
 
 @infix func -(lhs: NSDate, rhs:NSDate) -> NSTimeInterval {
