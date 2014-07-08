@@ -18,7 +18,7 @@ import Foundation
     }
 
     if (lhs.timeZone != rhs.timeZone) {
-        return nil;
+        return nil
     }
 
     let component = NSDateComponents()
@@ -51,7 +51,7 @@ import Foundation
     }
 
     if (lhs.timeZone != rhs.timeZone) {
-        return nil;
+        return nil
     }
 
     let component = NSDateComponents()
