@@ -18,7 +18,7 @@ import Foundation
 
 @infix func * (string: NSString, times: UInt) -> NSString {
     var returnString: NSMutableString = ""
-    for i in 0..times {
+    for i in 0..<times {
         returnString.appendString(string)
     }
     return returnString
