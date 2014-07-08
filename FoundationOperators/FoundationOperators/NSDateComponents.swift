@@ -22,7 +22,7 @@ import Foundation
     }
 
     let component = NSDateComponents()
-    component.setWeek(lhs.week() + rhs.week())
+    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) + zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
     component.era = zeroIfNSUndefinedDateComponent(lhs.era) + zeroIfNSUndefinedDateComponent(rhs.era)
     component.year = zeroIfNSUndefinedDateComponent(lhs.year) + zeroIfNSUndefinedDateComponent(rhs.year)
     component.month = zeroIfNSUndefinedDateComponent(lhs.month) + zeroIfNSUndefinedDateComponent(rhs.month)
@@ -55,7 +55,7 @@ import Foundation
     }
 
     let component = NSDateComponents()
-    component.setWeek(lhs.week() - rhs.week())
+    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) - zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
     component.era = zeroIfNSUndefinedDateComponent(lhs.era) - zeroIfNSUndefinedDateComponent(rhs.era)
     component.year = zeroIfNSUndefinedDateComponent(lhs.year) - zeroIfNSUndefinedDateComponent(rhs.year)
     component.month = zeroIfNSUndefinedDateComponent(lhs.month) - zeroIfNSUndefinedDateComponent(rhs.month)
